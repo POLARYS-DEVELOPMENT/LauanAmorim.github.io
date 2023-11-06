@@ -16,7 +16,19 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
+.language{
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 5000;
+}
+.language img{
+  height: 100%;
+  width: 6vh;
+}
+.language img:hover{
+  animation: 1s waviy infinite;
+}
 a{
    text-decoration: none;	
 }
@@ -85,7 +97,7 @@ section#services{
       transform: translateY(0)
     }
     20% {
-      transform: translateY(-10px)
+      transform: translateY(-8px)
     }
   }
 
@@ -387,9 +399,12 @@ section#services{
       .card .text-area{
         color: #000;
       }
+      .text-area p{
+        color: #747474;
+        
+      }
       .card p{
         padding-top: 20px;
-      
       }
       .social-media{
         list-style: none;
@@ -398,7 +413,11 @@ section#services{
         justify-content: space-around;
         align-items: center;
         padding-top: 5vh;
-    
+       
+      }
+      .social-media li:hover{
+        filter: brightness(0%);
+        transition: 0.5s ease-in-out;
       }
       .forms-location{
         display: flex;
@@ -509,6 +528,7 @@ section#services{
       }
 
       iframe{
+        padding: 0 0 100px 0;
         width: 642.6px;
         height: 700px;
         padding-top: 100px;
@@ -530,6 +550,9 @@ section#services{
     #footer-logo:hover{
         animation: waviy 1s infinite;
         animation-delay: calc(.1s * var(--i))
+    }
+    #footer-tittle{
+      color: #fff;
     }
     #footer-text{
         color: #BCBCBC;
@@ -580,7 +603,12 @@ section#services{
         animation-delay: calc(.1s * var(--i))
     }
 
-  
+  #footer-text a{
+    color: #BCBCBC;
+  }
+  #footer-text a:hover{
+    text-decoration: underline;
+  }
 .list-footer{
     padding: 0px 1rem;
     display: flex;
@@ -597,7 +625,6 @@ section#services{
         width: 600px;
         height: 700px;
         padding-top: 5vh;
-        border-radius: 0;
       }
       .faq-content {
         display: flex;
@@ -619,7 +646,6 @@ section#services{
         padding-right: 0;
       }
       iframe{
-       
         margin: 0;
         max-width: 350px;
         width: 100%;
@@ -885,4 +911,13 @@ section#services{
         justify-content: space-around;
         padding: 1rem;
     }
-}
+    
+
+      }
+     
+
+  
+      
+
+
+  
